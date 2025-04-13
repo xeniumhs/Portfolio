@@ -1,0 +1,28 @@
+
+h1{
+    color: rgb(96, 95, 95);
+}
+h3{
+    color: gray;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: aliceblue;
+    padding: 10px 20px;
+    text-align: center;
+    min-height: 60px;
+}
+.navbar:hover {
+    background-color: lightblue; /* Changes color when hovered */
+}
+
+footer{
+    background-color: teal;
+    color: aqua;
+}
