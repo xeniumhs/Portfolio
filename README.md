@@ -1,26 +1,33 @@
-# React Portfolio
+# Next.js Portfolio
 
-A personal portfolio website that will be built using **React.js** and **Tailwind CSS**.
+A personal portfolio website that will be built using **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-This project is a redesigned version of my previous portfolio, which was built using HTML and CSS. The goal is to rebuild it with a modern, responsive, component-based architecture while using Tailwind CSS for styling.
+This project is a redesigned version of my previous portfolio, which was originally built using HTML and CSS. I initially planned to rebuild it using React.js, but I decided to use **Next.js with TypeScript** instead as an opportunity to learn and build with a modern React framework.
+
+The goal is not only to create a professional portfolio but also to use this project as a **hands-on learning journey through Next.js, TypeScript, and modern web development**.
 
 ## 🎯 Project Goals
 
-* Rebuild my existing portfolio using React.js
+* Rebuild my existing portfolio using Next.js
+* Learn Next.js through practical project development
+* Learn and apply TypeScript in a real-world project
 * Use Tailwind CSS for modern and responsive styling
-* Create reusable and maintainable React components
+* Understand React and Next.js component architecture
+* Create reusable and maintainable components
 * Showcase my skills, projects, education, and experience
 * Improve the overall design and user experience
-* Make the portfolio easy to maintain and extend
+* Learn modern web development practices
+* Build a portfolio that can be continuously improved and extended
 
 ## 🛠️ Planned Tech Stack
 
-* **React.js** – Frontend library
-* **JavaScript (ES6+)** – Application logic
+* **Next.js** – React framework for building the portfolio
+* **React.js** – UI library used through Next.js
+* **TypeScript** – Type-safe JavaScript development
 * **Tailwind CSS** – Styling and responsive design
-* **HTML5** – Page structure
-* **Vite** – Development and build tool
-* **Git & GitHub** – Version control
+* **HTML5** – Web page structure
+* **Git & GitHub** – Version control and project management
+* **Vercel** – Planned deployment platform
 
 ## 📋 Planned Sections
 
@@ -30,77 +37,169 @@ This project is a redesigned version of my previous portfolio, which was built u
 * **Projects** – Selected projects and descriptions
 * **Education** – Academic background
 * **Experience** – Experience and achievements
-* **Contact** – Contact information and links
+* **Contact** – Contact information and social links
 
-## 🏗️ Development Plan
+The structure and sections may evolve as the project develops.
 
-* [ ] Initialize React project with Vite
+## 🏗️ Learning & Development Plan
+
+### Phase 1 — Project Setup
+
+* [ ] Initialize Next.js project
+* [ ] Configure TypeScript
 * [ ] Configure Tailwind CSS
-* [ ] Set up project structure
+* [ ] Understand the Next.js project structure
+* [ ] Set up Git and GitHub
+
+### Phase 2 — Next.js Fundamentals
+
+* [ ] Understand App Router
+* [ ] Learn layouts and pages
+* [ ] Learn reusable components
+* [ ] Understand server and client components
+* [ ] Learn navigation and routing
+* [ ] Understand static assets and the `public` directory
+
+### Phase 3 — Portfolio Development
+
 * [ ] Create navigation and basic layout
 * [ ] Build Home section
 * [ ] Build About section
 * [ ] Build Skills section
 * [ ] Build Projects section
-* [ ] Build Education/Experience section
+* [ ] Build Education section
+* [ ] Build Experience section
 * [ ] Build Contact section
-* [ ] Make the website fully responsive
+
+### Phase 4 — TypeScript
+
+* [ ] Learn TypeScript fundamentals
+* [ ] Define types and interfaces
+* [ ] Type React components and props
+* [ ] Type project and skill data
+* [ ] Understand TypeScript with Next.js
+* [ ] Replace unnecessary `any` usage with proper types
+
+### Phase 5 — UI & User Experience
+
+* [ ] Make the portfolio fully responsive
+* [ ] Improve typography and spacing
 * [ ] Add animations and interactions
-* [ ] Test across different screen sizes
-* [ ] Deploy the portfolio
+* [ ] Add dark/light mode
+* [ ] Create interactive project cards
+* [ ] Optimize the overall user experience
 
-## 🔄 Previous Portfolio
+### Phase 6 — Next.js Features & Optimization
 
-This project is a **React-based rebuild of my previous portfolio website**, which was originally developed using HTML and CSS.
+* [ ] Learn metadata and SEO
+* [ ] Optimize images
+* [ ] Learn Next.js rendering concepts
+* [ ] Improve accessibility
+* [ ] Optimize performance
+* [ ] Add a downloadable resume
+* [ ] Build a functional contact form
 
-The new version will use React for component-based development and Tailwind CSS for styling.
+### Phase 7 — Deployment
+
+* [ ] Prepare production build
+* [ ] Deploy using Vercel
+* [ ] Configure environment variables if required
+* [ ] Connect a custom domain
+* [ ] Test the production website
+* [ ] Monitor and improve the deployed portfolio
 
 ## 📁 Planned Project Structure
 
 ```text
 portfolio/
 ├── public/
+│   ├── images/
+│   └── ...
 ├── src/
-│   ├── assets/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
 │   ├── components/
 │   ├── sections/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+│   ├── data/
+│   └── types/
 ├── .gitignore
-├── index.html
+├── eslint.config.mjs
+├── next.config.ts
 ├── package.json
 ├── package-lock.json
-├── vite.config.js
+├── postcss.config.mjs
+├── tsconfig.json
 └── README.md
 ```
 
-> The project structure may change during development.
+> The project structure may change as I learn more about Next.js and improve the architecture.
 
 ## 🚀 Getting Started
 
 The project is currently in the planning stage.
 
-Setup and installation instructions will be added after the React project and Tailwind CSS environment have been configured.
+Once the Next.js environment has been configured, installation and development instructions will be added here.
+
+The planned development workflow will be:
+
+```bash
+npm install
+npm run dev
+```
+
+The development server will then be available locally.
 
 ## 📌 Project Status
 
 **🚧 Planning — Development Not Started**
 
-This repository is currently the starting point for rebuilding my portfolio with React.js and Tailwind CSS.
+This repository is the starting point for rebuilding my portfolio using **Next.js, TypeScript, and Tailwind CSS**.
+
+The project will also serve as a practical learning experience where I can gradually learn Next.js and TypeScript by applying them to a real project.
 
 ## 🔮 Future Improvements
 
-Potential improvements include:
+Potential future improvements include:
 
 * [ ] Dark/light mode
 * [ ] Smooth animations
-* [ ] Interactive project cards
+* [ ] Interactive project showcase
 * [ ] Downloadable resume
 * [ ] Functional contact form
 * [ ] SEO optimization
+* [ ] Performance optimization
+* [ ] Accessibility improvements
 * [ ] Custom domain
-* [ ] Deployment
+* [ ] Analytics
+* [ ] Blog section
+* [ ] Deployment with Vercel
+
+## 🔄 Previous Portfolio
+
+This project is a **Next.js-based rebuild of my previous portfolio website**, which was originally developed using HTML and CSS.
+
+The original portfolio provided the foundation for this project. The new version will focus on:
+
+* Modern UI/UX
+* Component-based architecture
+* Type safety with TypeScript
+* Responsive design
+* Next.js features
+* Better performance and maintainability
+
+## 📚 Learning Journey
+
+This portfolio is intentionally being developed while learning **Next.js and TypeScript**.
+
+Instead of trying to learn everything before starting the project, I plan to learn concepts as they become necessary during development.
+
+This project will therefore evolve alongside my knowledge.
+
+> **Learn → Build → Break → Debug → Improve → Repeat.**
+
+The goal is to finish with both a **professional portfolio** and a stronger understanding of modern React and Next.js development.
 
 ## 👨‍💻 Author
 
@@ -112,4 +211,4 @@ LinkedIn: `https://www.linkedin.com/in/xeniumhs/`
 
 ---
 
-*This README will be updated as development progresses.*
+*This README will be updated as the project progresses and new features are added.*
