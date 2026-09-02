@@ -4,16 +4,63 @@ export default function Hero() {
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden bg-[var(--background)] px-6 pt-16"
     >
-      {/* Background */}
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        {/* Main ambient glow */}
-        <div className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--accent)]/[0.07] blur-3xl" />
+      {/* Atmospheric Background */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        {/* Main lavender spotlight */}
+        <div
+          className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl animate-spotlight"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(155, 138, 251, 0.35) 0%, rgba(155, 138, 251, 0.15) 40%, transparent 70%)",
+          }}
+        />
 
-        {/* Small secondary glow */}
-        <div className="absolute right-[10%] top-[20%] h-[250px] w-[250px] rounded-full bg-[var(--accent)]/[0.05] blur-3xl" />
+        {/* Left-side glow */}
+        <div
+          className="
+      absolute
+      -left-[20%] top-[20%]
+      h-[700px] w-[700px]
+      rounded-full
+      blur-[150px]
+    "
+          style={{
+            background:
+              "radial-gradient(circle, var(--glow-medium) 0%, transparent 68%)",
+          }}
+        />
+
+        {/* Bottom glow */}
+        <div
+          className="
+      absolute
+      bottom-[-35%] right-[15%]
+      h-[800px] w-[800px]
+      rounded-full
+      blur-[160px]
+    "
+          style={{
+            background:
+              "radial-gradient(circle, var(--glow-soft) 0%, transparent 65%)",
+          }}
+        />
+
+        {/* Small concentrated light */}
+        <div
+          className="
+      absolute
+      right-[25%] top-[18%]
+      h-[280px] w-[280px]
+      rounded-full
+      blur-[90px]
+    "
+          style={{
+            background: "var(--glow-small)",
+          }}
+        />
       </div>
 
-      <div className="mx-auto w-full max-w-7xl">
+      <div className="relative z-10 mx-auto w-full max-w-7xl">
         <div className="max-w-5xl">
           {/* Label */}
           <div className="mb-8 flex items-center gap-3">
