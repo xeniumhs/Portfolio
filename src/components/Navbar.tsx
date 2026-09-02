@@ -1,68 +1,67 @@
+import ThemeToggle from "@/components/ThemeToggle";
+
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#home" className="text-xl font-bold tracking-tight text-white">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-[var(--border)] bg-[var(--background)]/80 backdrop-blur-xl">
+      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+        <a
+          href="#home"
+          className="text-xl font-bold tracking-tight text-[var(--foreground)] transition-opacity hover:opacity-70"
+        >
           xen.
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
-          <a
+          {/* <a
             href="#home"
-            className="text-sm text-gray-300 transition hover:text-white"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
           >
             Home
-          </a>
+          </a> */}
 
-          <a
-            href="#about"
-            className="text-sm text-gray-300 transition hover:text-white"
-          >
-            About
-          </a>
-
-          <a
-            href="#skills"
-            className="text-sm text-gray-300 transition hover:text-white"
-          >
-            Skills
-          </a>
-
-          <a
+          
+<a
             href="#projects"
-            className="text-sm text-gray-300 transition hover:text-white"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
           >
             Projects
           </a>
-
           <a
-            href="#education"
-            className="text-sm text-gray-300 transition hover:text-white"
+            href="#skills"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
           >
-            Education
+            Skills
           </a>
-
           <a
-            href="#experience"
-            className="text-sm text-gray-300 transition hover:text-white"
+            href="#certificates"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
           >
-            Experience
+            Certificates
           </a>
-
+<a
+            href="#about"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
+          >
+            About
+          </a>
           <a
             href="#contact"
-            className="text-sm text-gray-300 transition hover:text-white"
+            className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
           >
             Contact
           </a>
         </div>
 
-        <a
-          href="#contact"
-          className="rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:bg-white hover:text-black"
-        >
-          Let's Talk
-        </a>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+
+          <a
+            href="#contact"
+            className="rounded-full border border-[var(--border)] px-4 py-2 text-sm font-medium text-[var(--foreground)] transition-all hover:bg-[var(--foreground)] hover:text-[var(--background)]"
+          >
+            Let&apos;s Talk
+          </a>
+        </div>
       </nav>
     </header>
   );
