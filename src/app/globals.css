@@ -1,40 +1,116 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f7f9;
+  --foreground: #17171c;
+
+  --section: #f0f0f4;
+
+  --muted: #686875;
+  --surface: #eeeef2;
+  --surface-hover: #e4e4ea;
+
+  --border: rgba(23, 23, 28, 0.1);
+
+  --accent: #7c6ee6;
+  --accent-hover: #6b5bd3;
+
+  --glow-strong: rgba(124, 110, 230, 0.76);
+  --glow-medium: rgba(124, 110, 230, 0.6);
+  --glow-soft: rgba(124, 110, 230, 0.42);
+  --glow-small: rgba(124, 110, 230, 0.64);
+}
+
+.dark {
+  --background: #08090c;
+  --foreground: #f4f3fa;
+
+  --section: #0d0f14;
+
+  --muted: #9b9aa8;
+  --surface: #111218;
+  --surface-hover: #181923;
+
+  --border: rgba(244, 243, 250, 0.1);
+
+  --accent: #9b8afb;
+  --accent-hover: #b8acff;
+
+  --glow-strong: rgba(155, 138, 251, 0.38);
+  --glow-medium: rgba(155, 138, 251, 0.26);
+  --glow-soft: rgba(155, 138, 251, 0.2);
+  --glow-small: rgba(155, 138, 251, 0.32);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
 }
 
 body {
+  min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #050505;
+::selection {
+  background: var(--accent);
   color: #ffffff;
 }
 
-::selection {
-  background: #ffffff;
-  color: #000000;
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-hover);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@keyframes spotlight {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  25% {
+    transform: translate(-45%, -55%) scale(1.08);
+  }
+
+  50% {
+    transform: translate(-55%, -45%) scale(0.95);
+  }
+
+  75% {
+    transform: translate(-48%, -52%) scale(1.05);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.animate-spotlight {
+  animation: spotlight 12s ease-in-out infinite;
 }
