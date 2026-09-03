@@ -11,7 +11,7 @@ export const skills: Skill[] = [
     name: "CSS",
     category: "Frontend",
     description: "Styling and layout of web pages.",
-    icon: "https://cdn.simpleicons.org/css3",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
   },
   {
     name: "React",
