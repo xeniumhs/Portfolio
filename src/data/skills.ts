@@ -2,6 +2,18 @@ import { Skill } from "@/types";
 
 export const skills: Skill[] = [
   {
+    name: "HTML",
+    category: "Frontend",
+    description: "Structuring web content and building web pages.",
+    icon: "https://cdn.simpleicons.org/html5",
+  },
+  {
+    name: "CSS",
+    category: "Frontend",
+    description: "Styling and layout of web pages.",
+    icon: "https://cdn.simpleicons.org/css3",
+  },
+  {
     name: "React",
     category: "Frontend",
     description: "Building modern and reusable user interfaces.",
